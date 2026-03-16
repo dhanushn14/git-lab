@@ -1,0 +1,13 @@
+name: GitHub Actions Demo
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run script
+        run: echo "GitHub Actions workflow executed successfully"
